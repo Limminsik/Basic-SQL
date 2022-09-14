@@ -38,3 +38,22 @@ _* = 모든 것을 의미 ( 아스타 )_
       SELECT *
       FROM customers
       WHERE customername < 'B' OR country = 'Germany'
+
+
+## LIKE,  IN,  BETWEEN,  IS NULL
+ > % = 뒤에 어떤 것이 들어가도 상관 없다.
+ > 
+ > ***IS NULL = NaN (Not a Number) 결측값***
+ 
+ 
+      SELECT *
+      FROM Customers
+      WHERE country LIKE 'Br%'
+      
+      SELECT *
+      FROM Customers
+      WHERE country IN ('Germany', 'France') =  WHERE country = 'Germany' OR country = 'France'
+      
+      SELECT *
+      FROM Customers
+      WHERE CustomerID BETWEEN 3 AND 5
