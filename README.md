@@ -1,6 +1,4 @@
 # Basic-SQL
-
-## 0914
   HackerRank https://www.hackerrank.com/domains/sql
   
   W3school https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
@@ -48,7 +46,11 @@ __* = 모든 것을 의미 ( 아스타 )__
  
       SELECT *
       FROM Customers
-      WHERE country LIKE 'Br%'
+      WHERE country LIKE 'Br%' 
+      = 
+      WHERE country = 'Brazil' ( 이 경우에는 정확한 DATA 명을 알고 있어야 함. / DATA 불러오는 속도가 훨씬 빠르다. )
+      
+      WHERE country LIKE 'B_____' ( ' _ ' = 빈칸을 의미 )
       
       SELECT *
       FROM Customers
