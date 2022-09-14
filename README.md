@@ -7,7 +7,7 @@
   
   ---
 
-_* = 모든 것을 의미 ( 아스타 )_
+__* = 모든 것을 의미 ( 아스타 )__
 
       SELECT *  
       FROM Customers
@@ -43,7 +43,7 @@ _* = 모든 것을 의미 ( 아스타 )_
 ## LIKE,  IN,  BETWEEN,  IS NULL
  > % = 뒤에 어떤 것이 들어가도 상관 없다.
  > 
- > ***IS NULL = NaN (Not a Number) 결측값***
+ > __IS NULL = NaN (Not a Number) 결측값__
  
  
       SELECT *
