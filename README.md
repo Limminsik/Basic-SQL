@@ -83,3 +83,12 @@ ___
     SELECT *
     FROM Customers
     WHERE Country IN ('Germany', 'France', 'Korea')
+    
+    
+## DISTINCT
+> 중복된 값을 제외시켜준다
+
+    SELECT DISTINCT *
+    FROM CUSTOMERS
+    WHERE COUNTRY LIKE '%a%'
+    OR COUNTRY LIKE '%b%'
