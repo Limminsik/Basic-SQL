@@ -7,8 +7,8 @@
 
 > __* = 모든 것을 의미 ( 아스타 )__
 
-      SELECT *  
-      FROM Customers
+      SELECT *              ### SELCT 무엇을 선택
+      FROM Customers        ### FROM 무슨 테이블로부터
       Limit 5;
 
 
