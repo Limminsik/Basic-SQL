@@ -4,6 +4,9 @@
   W3school     https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
   
   ---
+  
+  
+# 데이터 검색하기
 
 > __* = 모든 것을 의미 ( 아스타 )__
 
@@ -92,3 +95,8 @@ ___
     FROM CUSTOMERS
     WHERE COUNTRY LIKE '%a%'
     OR COUNTRY LIKE '%b%'
+    
+    
+# 데이터 순서 정렬하기
+
+
