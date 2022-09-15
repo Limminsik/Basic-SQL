@@ -1,11 +1,11 @@
 # Basic-SQL
-  HackerRank https://www.hackerrank.com/domains/sql
+  HackerRank   https://www.hackerrank.com/domains/sql
   
-  W3school https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
+  W3school     https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
   
   ---
 
-__* = 모든 것을 의미 ( 아스타 )__
+> __* = 모든 것을 의미 ( 아스타 )__
 
       SELECT *  
       FROM Customers
@@ -61,3 +61,8 @@ __* = 모든 것을 의미 ( 아스타 )__
       SELECT *
       FROM Customers
       WHERE CustomerID BETWEEN 3 AND 5
+
+
+## WHERE 절 요약
+    
+    
