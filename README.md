@@ -41,7 +41,8 @@
 ## LIKE,  IN,  BETWEEN,  IS NULL
  > % = 뒤에 어떤 것이 들어가도 상관 없다.
  > 
- > \ = 이스케이프 ;= 예약어를 탈출한다.  \ % = 예약어 %가 아닌 퍼센트 %를 의미
+ > \ = 이스케이프 ;= 예약어를 탈출한다.  \ % = 예약어 %가 아닌 퍼센트 %를 의미  
+ > 자신이 사용하는 DB를 검색해서 사용
  > 
  > __IS NULL = NaN (Not a Number) 결측값__
  
@@ -62,7 +63,23 @@
       FROM Customers
       WHERE CustomerID BETWEEN 3 AND 5
 
+___
 
-## WHERE 절 요약
-    
-    
+#### BETWEEN  
+
+
+> BETWEEN은 특정 범위 내에 있는 행만 추출  
+> AND연산자와 함께 시작값, 끝값을 포함
+
+    SELECT * 
+    FROM CUSTOMERS
+    WHERE CustomerNAME BETWEEN 'C' AND 'E';
+  
+
+#### IN
+
+> IN은 값 목록을 지정  
+
+    SELECT *
+    FROM Customers
+    WHERE Country IN ('Germany', 'France', 'Korea')
