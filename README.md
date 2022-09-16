@@ -8,10 +8,11 @@
   
 # 데이터 검색하기
 
-> __* = 모든 것을 의미 ( 아스타 )__
+> __* = 모든 것을 의미 ( 아스타 )__  
+> -- : SQL 내에서 사용하는 주석
 
-      SELECT *              ### SELCT 무엇을 선택
-      FROM Customers        ### FROM 무슨 테이블로부터
+      SELECT *              -- SELCT 무엇을 선택
+      FROM Customers        -- FROM 무슨 테이블로부터
       Limit 5;
 
 
@@ -97,6 +98,38 @@ ___
     OR COUNTRY LIKE '%b%'
     
     
-# 데이터 순서 정렬하기
+## 데이터 순서 정렬하기
+> 오름차순 정렬 : __ASC__  = Default값 
+> 내림차순 정렬 : __DESC__  
+> __ORDER BY__
+
+    SELECT *
+    FROM Customers
+    * WHERE ___  조건절의 위치
+    ORDER BY CustomerID DESC
+    
+    
+    SELECT * 
+    FROM Products
+    WHERE price >= 88
+    ORDER BY Price DESC
+    
+    
+    
+## 문자열 자르기  
+> LEFT / RIGHT : ( 컬럼명 또는 문자열, 문자열의 길이 )  
+> SUBSTRING : ( 컬럼명 또는 문자열, 시작 위치, 길이 ) =; SUBSTR
+
+  
+     SELECT LEFT ( "20140323", 4 ) => 2014
+     
+     SELECT RIGHT ( "20140323", 4 ) => 0323
+     
+     SUBSTR ( "20140323", 1, 4 ) => 2014
+     SUBSTR ( "20140323", 5 ) => 0323
+
+
+
+
 
 
