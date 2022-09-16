@@ -117,19 +117,36 @@ ___
     
     
 ## 문자열 자르기  
-> LEFT / RIGHT : ( 컬럼명 또는 문자열, 문자열의 길이 )  
-> SUBSTRING : ( 컬럼명 또는 문자열, 시작 위치, 길이 ) =; SUBSTR
+> LEFT / RIGHT : ( 컬럼명 또는 문자열, 문자열의 길이 )    
 
-  
      SELECT LEFT ( "20140323", 4 ) => 2014
+     SELECT RIGHT ( "20140323", 4 ) => 0323  
      
-     SELECT RIGHT ( "20140323", 4 ) => 0323
-     
+> SUBSTRING : ( 컬럼명 또는 문자열, 시작 위치, 길이 ) =; SUBSTR  
+
      SUBSTR ( "20140323", 1, 4 ) => 2014
-     SUBSTR ( "20140323", 5 ) => 0323
+     SUBSTR ( "20140323", 5 ) => 0323 --시작위치만 표시시 길이는 끝까지
 
 
+## 소수점처리   
+> CEIL() 올림  
 
+     SELECT CEIL(5.5) => 6  
+    
+> FLOOR() 내림  
+
+     SELECT FLOOR(5.5) => 5  
+    
+> ROUND() 반올림  
+
+    ROUND(5.556901, 4) => 5.5569
+      
+    SELECT ROUND(LONG_W, 4)
+    FROM STATION
+    WHERE LAT_N < 137.2345
+    ORDER BY LAT_N DESC
+    LIMIT 1
+    
 
 
 
