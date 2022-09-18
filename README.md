@@ -11,18 +11,19 @@
 > __* = 모든 것을 의미 ( 아스타 )__  
 > -- : SQL 내에서 사용하는 주석
 
-      SELECT *              -- SELCT 무엇을 선택
+      SELECT *              -- SELCT 무엇을 선택 
+                            -- SELECT SUM( ) / SELECT AVG( )
       FROM Customers        -- FROM 무슨 테이블로부터
       Limit 5;
 
 
-## WHERE 절
+## WHERE 조건절
 
       SELECT *
       FROM customers
       WHERE country = 'Germany'
 
-## 비교 연산자 <, >
+### 비교 연산자 <, >
 
       SELECT *
       FROM customers
@@ -32,7 +33,7 @@
       FROM customers
       WHERE customername < 'B'
 
-## 논리 연산자 AND / OR
+### 논리 연산자 AND / OR
       SELECT *
       FROM CUSTOMERS
       WHERE customername < 'B' AND country = 'Germany'
@@ -69,7 +70,7 @@
 
 ___
 
-#### BETWEEN  
+### BETWEEN  
 
 
 > BETWEEN은 특정 범위 내에 있는 행만 추출  
@@ -80,7 +81,7 @@ ___
     WHERE CustomerNAME BETWEEN 'C' AND 'E';
   
 
-#### IN
+### IN
 
 > IN은 값 목록을 지정  
 
@@ -89,7 +90,7 @@ ___
     WHERE Country IN ('Germany', 'France', 'Korea')
     
     
-## DISTINCT
+## DISTINCT 
 > 중복된 값을 제외시켜준다
 
     SELECT DISTINCT *
@@ -98,7 +99,7 @@ ___
     OR COUNTRY LIKE '%b%'
     
     
-## 데이터 순서 정렬하기
+## ORDER BY : 데이터 순서 정렬하기
 > 오름차순 정렬 : __ASC__  = Default값 
 > 내림차순 정렬 : __DESC__  
 > __ORDER BY__
@@ -116,7 +117,7 @@ ___
     
     
     
-## 문자열 자르기  
+## LEFT / RIGHT / SUBSTR : 문자열 자르기  
 > LEFT / RIGHT : ( 컬럼명 또는 문자열, 문자열의 길이 )    
 
      SELECT LEFT ( "20140323", 4 ) => 2014
@@ -128,7 +129,7 @@ ___
      SUBSTR ( "20140323", 5 ) => 0323 --시작위치만 표시시 길이는 끝까지
 
 
-## 소수점처리   
+## CEIL / FLOOR / ROUND : 소수점처리   
 > CEIL() 올림  
 
      SELECT CEIL(5.5) => 6  
